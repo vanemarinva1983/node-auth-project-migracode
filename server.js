@@ -15,7 +15,7 @@ app.use(cors(corsOptions)); // enable CORS
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to MigraCode Auth application." });
+  res.json({ message: "Welcome to My Auth application." });
 });
 
 // set port, listen for requests

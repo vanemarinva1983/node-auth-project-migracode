@@ -1,0 +1,81 @@
+body {
+  background-image: url(https://img.freepik.com/free-photo/smart-agriculture-iot-with-hand-planting-tree-background_53876-124626.jpg?t=st=1658127377~exp=1658127977~hmac=13eb0567d5ea7d597d7d7c3b6e5c2569f9918ff2b1b67a19cacac7da2cc53059&w=1060);
+  background-size: cover;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  align-items: center;
+}
+  
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.formResponse {
+  width: 100%;
+  background-color: none;
+  padding: 20px 0;
+  color: rgb(248, 248, 248);
+  text-shadow: 0px 0px 30px rgb(255, 253, 253);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: rgb(52, 49, 49);
+  text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 23px 0px 13px;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}

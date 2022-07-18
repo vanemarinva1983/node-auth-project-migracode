@@ -4,11 +4,12 @@ require("dotenv").config();
 
 function authenticate (req, res, next) {
   // Get token from request headers
-  let token = req.header("authorization");
-  
+  let token = req.header("authorization");  
   // Check if token exists
   if (!token) {
-    return res.status(403).send({ message: "authorization denied", isAuthenticated: false });
+    return res
+    .status(403)
+    .send({ message: "authorization denied", isAuthenticated: false });
   }
 
   token = token.split(" ")[1];
@@ -18,7 +19,7 @@ function authenticate (req, res, next) {
     /* this will return the user id (user:{id: user_id}) which we 
     provided as payload while generating JWT token */
     const verify = jwt.verify(token, process.env.jwtSecret);
-
+    
     req.user = verify.user;
 
     next();
